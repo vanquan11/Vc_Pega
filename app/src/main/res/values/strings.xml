@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vc_Pega</string>
+    <string name="menu_myNews">Tin của bạn</string>
+    <string name="menu_hotNews">Tin nóng</string>
+    <string name="menu_discover">Khám phá</string>
+    <string name="menu_notification">Thông báo</string>
+    <string name="menu_person">Cá nhân</string>
+    <string name="topNews">Top News</string>
+    <string name="eventBig">Sự kiện nổi bật</string>
+    <string name="hotTopic">Chủ đề nổi bật</string>
+</resources>

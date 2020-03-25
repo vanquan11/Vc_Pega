@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_reload"
+            android:layout_width="24dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_refresh"
+            app:layout_constraintBottom_toBottomOf="@id/underline1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/img_share"/>
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_share"
+            app:layout_constraintBottom_toBottomOf="@id/img_reload"
+            app:layout_constraintStart_toEndOf="@id/img_reload"
+            app:layout_constraintTop_toTopOf="@id/img_reload"
+            app:layout_constraintEnd_toStartOf="@id/img_bookmak"/>
+
+        <ImageView
+            android:id="@+id/img_bookmak"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/bookmark"
+            app:layout_constraintBottom_toBottomOf="@id/img_reload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/img_share"
+            app:layout_constraintTop_toTopOf="@id/img_reload" />
+
+        <View
+            android:id="@+id/underline1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/bg_typeFour"
+            app:layout_constraintTop_toBottomOf="@id/img_reload" />
+
+        <TextView
+            android:id="@+id/txt_openwweb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mở bằng trình duyệt"
+            app:layout_constraintBottom_toBottomOf="@+id/underline2"
+            app:layout_constraintStart_toStartOf="@id/img_reload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toBottomOf="@id/underline1"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+        <View
+            android:layout_marginTop="16dp"
+            android:id="@+id/underline2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/bg_typeFour"
+            app:layout_constraintTop_toBottomOf="@id/txt_openwweb" />
+
+        <TextView
+            android:id="@+id/txt_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Sao chép liên kết"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/img_reload"
+            app:layout_constraintTop_toBottomOf="@id/underline2"
+            android:textSize="16dp"
+            android:textColor="@color/black"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
